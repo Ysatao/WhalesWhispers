@@ -22,6 +22,7 @@ public class WallEnigma : MonoBehaviour
             {
                 //Affichage pour voir si ça fonctionne bien
                 Debug.Log("réussi");
+                GameManager.Instance.puzzle1Succeed = true;
                 SceneManager.LoadSceneAsync("Cave");
             }
         }
@@ -30,6 +31,8 @@ public class WallEnigma : MonoBehaviour
         else
         {
             Debug.Log("raté");
+            //Si le joueur rate, une croix s'affiche pour lui faire comprendre qu'il a raté et qu'il doit recommencer
+
             actualIndex = 0;
         }
     }
