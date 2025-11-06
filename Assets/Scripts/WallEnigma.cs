@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,11 +8,12 @@ public class WallEnigma : MonoBehaviour
     string[] correctAnswer = { "left", "right", "right", "left" };
     int actualIndex = 0;
 
+    public GameObject croixPanel;
     public void ButtonClick(string button)
     {
 
         //Si le clic du joueur correspond, il continue
-        if(button == correctAnswer[actualIndex])
+        if (button == correctAnswer[actualIndex])
         {
             actualIndex++;
 
@@ -32,8 +34,17 @@ public class WallEnigma : MonoBehaviour
         {
             Debug.Log("raté");
             //Si le joueur rate, une croix s'affiche pour lui faire comprendre qu'il a raté et qu'il doit recommencer
+            StartCoroutine(StartCroixRouge(1f));
 
             actualIndex = 0;
         }
     }
-}
+
+        private IEnumerator StartCroixRouge(float delay)
+        {
+        croixPanel.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        croixPanel.SetActive(false);
+        }
+    }
+
