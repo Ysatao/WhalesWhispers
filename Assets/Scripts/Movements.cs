@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Movements : MonoBehaviour
 {
-    //Pour aller du village à la grotte
-    public void FromVillageToCave()
+    //Pour aller à la grotte
+    public void ToCave()
     {
         //Si l'énigme a déjà été réussie, on va directement à la grotte
         if (GameManager.Instance.puzzle1Succeed)
@@ -18,9 +18,24 @@ public class Movements : MonoBehaviour
         }
     }
 
-    //Pour aller de la grotte au village
-    public void FromCaveToVillage()
+    //Pour aller au village
+    public void ToVillage()
     {
         SceneManager.LoadSceneAsync("Village");
+    }
+
+    public void ToWhaleForBubbles()
+    {
+        //Si le joueur a réussi le premier puzzle, il peut aller à la suite
+        if(GameManager.Instance.puzzle1Succeed)
+        {
+            SceneManager.LoadSceneAsync("Whale for bubbles");
+        }
+        //Si le joueur n'a pas réussi le premier puzzle, il ne peut pas aller à la suite
+        else
+        {
+            Debug.Log("Vous ne pouvez pas aller là pour le moment");
+        }
+        
     }
 }

@@ -353,7 +353,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 112508896}
         m_TargetAssemblyTypeName: Movements, Assembly-CSharp
-        m_MethodName: FromCaveToVillage
+        m_MethodName: ToVillage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
