@@ -36,6 +36,11 @@ public class Movements : MonoBehaviour
         {
             Debug.Log("Vous ne pouvez pas aller là pour le moment");
         }
-        
     }
+
+    public void ToArrival()
+    {
+        SceneManager.LoadSceneAsync("Arrival");
+    }
+
 }

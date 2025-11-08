@@ -2,23 +2,20 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Dialogues : MonoBehaviour
+public class DialoguesSettings : MonoBehaviour
 {
+
     public GameObject text;
-    string[] playerAnswer = { "yes", "no" };
+    string[] playerAnswer = { "to the puzzle", "not now" };
 
     public void YesNo(string answer)
     {
-        if(answer == "yes")
+        //Si le joueur choisit to the puzzle, il ira au puzzle. Sinon, le dialogue se ferme
+        if(answer == "to the puzzle")
         {
             SceneManager.LoadSceneAsync("Bubbles enigma");
         }
-        else
-        {
-            SceneManager.LoadSceneAsync("Village");
-        }
     }
-
 
     public void Start()
     {
@@ -26,7 +23,7 @@ public class Dialogues : MonoBehaviour
         TextVillageCoroutine();
     }
 
-    public void TextVillageCoroutine()
+      public void TextVillageCoroutine()
     {
         //Si le puzzle n'a pas encore été réussi, le texte apparaît
         if (!GameManager.Instance.puzzle1Succeed)

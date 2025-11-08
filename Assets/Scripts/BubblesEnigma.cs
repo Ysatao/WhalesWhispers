@@ -8,12 +8,14 @@ public class BubblesEnigma : MonoBehaviour
     int correctAnswer = 4;
 
     public GameObject croixPanel;
+
     public void ChooseAnswer(int playerAnswer)
     {
         //Si le joueur clique sur la bonne réponse, il retourne à la baleine
         if(playerAnswer == correctAnswer)
         {
             SceneManager.LoadSceneAsync("Whale for bubbles");
+            GameManager.Instance.puzzle2Succeed = true;
         }
         else
         {
