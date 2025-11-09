@@ -5,7 +5,7 @@ using System.Collections;
 public class BubblesEnigma : MonoBehaviour
 {
     //Déclarer et définir la variable pour la réponse à l'énigme
-    int correctAnswer = 4;
+    int correctAnswer = 5;
 
     public GameObject croixPanel;
 
@@ -14,7 +14,7 @@ public class BubblesEnigma : MonoBehaviour
         //Si le joueur clique sur la bonne réponse, il retourne à la baleine
         if(playerAnswer == correctAnswer)
         {
-            SceneManager.LoadSceneAsync("Whale for bubbles");
+            SceneManager.LoadSceneAsync("Village right side");
             GameManager.Instance.puzzle2Succeed = true;
         }
         else

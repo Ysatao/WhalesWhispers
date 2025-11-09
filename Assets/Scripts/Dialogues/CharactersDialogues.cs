@@ -49,20 +49,6 @@ public class CharactersDialogues : MonoBehaviour
     private void Start()
     {
         StartDialogue();
-        /*Si le dialogue a déjà été fait, il n'apparaît plus
-        if (GameManager.Instance != null && GameManager.Instance.arrivalDialogueDone)
-        {
-            //Si le dialogue est déjà fini, on désactive tout
-            for(int i = 0; i < dialoguePanels.Length; i++)
-            {
-                dialoguePanels[i].SetActive(false);
-            }
-        }
-        //Si le dialogue n'a pas encore été fait, la premier panel apparaît
-        else if (dialoguePanels.Length > 0)
-        {
-            dialoguePanels[0].SetActive(true);
-        }*/
     }
 
     public void NextDialogue()
