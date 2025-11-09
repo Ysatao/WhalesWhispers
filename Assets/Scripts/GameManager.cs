@@ -6,7 +6,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [HideInInspector] public bool puzzle1Succeed = false;
-    [HideInInspector]public bool puzzle2Succeed = false;
+    [HideInInspector] public bool puzzle2Succeed = false;
+    [HideInInspector] public bool arrivalDialogueDone = false;
+    [HideInInspector] public bool tabletTaken = false;
 
     //Il sera actif dès le lancement du jeu
     private void Awake()

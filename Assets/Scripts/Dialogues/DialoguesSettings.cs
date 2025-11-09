@@ -6,16 +6,7 @@ public class DialoguesSettings : MonoBehaviour
 {
 
     public GameObject text;
-    string[] playerAnswer = { "to the puzzle", "not now" };
 
-    public void YesNo(string answer)
-    {
-        //Si le joueur choisit to the puzzle, il ira au puzzle. Sinon, le dialogue se ferme
-        if(answer == "to the puzzle")
-        {
-            SceneManager.LoadSceneAsync("Bubbles enigma");
-        }
-    }
 
     public void Start()
     {

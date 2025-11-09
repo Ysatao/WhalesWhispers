@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Movements : MonoBehaviour
 {
+    GameObject tablet;
+
     //Pour aller à la grotte
     public void ToCave()
     {
@@ -38,9 +40,17 @@ public class Movements : MonoBehaviour
         }
     }
 
+   
+
+    public void ToBubblesPuzzle()
+    {
+        SceneManager.LoadSceneAsync("Bubbles enigma");
+    }
+
     public void ToArrival()
     {
         SceneManager.LoadSceneAsync("Arrival");
+
     }
 
 }

@@ -1,35 +1,97 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharactersDialogues : MonoBehaviour
 {
-    [SerializeField] GameObject dialoguePanel;
-    [SerializeField] GameObject dialoguePanel2;
-    [SerializeField] GameObject dialoguePanel3;
+    //Tableau de panels
+    [SerializeField] GameObject[] dialoguePanels;
+    int currentIndex = 0;
+    string[] playerAnswer = { "to the puzzle", "not now"};
 
-
-
-    public void ShowDialogue()
+    public void YesNo(string answer)
     {
-        dialoguePanel.SetActive(true);
+        //Si le joueur choisit to the puzzle, il ira au puzzle. Sinon, le dialogue se ferme
+        if (answer == "to the puzzle")
+        {
+            SceneManager.LoadSceneAsync("Bubbles enigma");
+        }
+        else
+        {
+            EndDialogue();
+        }
+    }
+
+    public void StartDialogue()
+    {
+        currentIndex = 0;
+
+        //Si le puzzle 2 n'a pas été résolu, le dialogue recommence
+        if (GameManager.Instance !=null && GameManager.Instance.puzzle2Succeed)
+        {
+            for(int i = 0; i < dialoguePanels.Length; i++)
+            {
+                dialoguePanels[i].SetActive(false);
+            }
+        }
+        else if(dialoguePanels.Length > 0)
+        {
+            dialoguePanels[0].SetActive(true);
+        }
+        else
+        {
+            for(int i = 0; i <dialoguePanels.Length; i++)
+            {
+                dialoguePanels[i].SetActive(false);
+            }
+        }
+    }
+    private void Start()
+    {
+        StartDialogue();
+        /*Si le dialogue a déjà été fait, il n'apparaît plus
+        if (GameManager.Instance != null && GameManager.Instance.arrivalDialogueDone)
+        {
+            //Si le dialogue est déjà fini, on désactive tout
+            for(int i = 0; i < dialoguePanels.Length; i++)
+            {
+                dialoguePanels[i].SetActive(false);
+            }
+        }
+        //Si le dialogue n'a pas encore été fait, la premier panel apparaît
+        else if (dialoguePanels.Length > 0)
+        {
+            dialoguePanels[0].SetActive(true);
+        }*/
     }
 
     public void NextDialogue()
     {
-        dialoguePanel.SetActive(false);
-        dialoguePanel2.SetActive(true);
-    }
+        //S'il n'y a plus de panels, le dialogue se termine
+        if(dialoguePanels.Length == 0)
+        {
+            return;
+        }
 
-    public void NextDialogue2()
-    {
-        dialoguePanel2.SetActive(false);
-        dialoguePanel3.SetActive(true);
+        //Désactiver le panel actuel et passer au suivant
+        dialoguePanels[currentIndex].SetActive(false);
+        currentIndex++;
+
+        if(currentIndex >= dialoguePanels.Length)
+        {
+            EndDialogue();
+        }
+        else
+        {
+            dialoguePanels[currentIndex].SetActive(true);
+        }
     }
 
     public void EndDialogue()
     {
-        dialoguePanel.SetActive(false);
-        dialoguePanel2.SetActive(false);
-        dialoguePanel3.SetActive(false);
+        for(int i = 0; i < dialoguePanels.Length; i++)
+        {
+            dialoguePanels[i].SetActive(false);
+        }
     }
 }
