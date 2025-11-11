@@ -21,14 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Cave.unity
     guid: b6014978550c1494d8f9509d7a56500e
   - enabled: 1
-    path: Assets/Scenes/Whale for bubbles.unity
+    path: Assets/Scenes/Whale translate.unity
     guid: 24050afcf40ca6443acdbf2744c39258
   - enabled: 1
-    path: Assets/Scenes/Bubbles enigma.unity
-    guid: 7540d3acea5e6cd45a9ed82835bde649
+    path: Assets/Scenes/Translation enigma.unity
+    guid: 9da84b9702c23b44fb8c33685807d7ab
   - enabled: 1
     path: Assets/Scenes/Village right side.unity
     guid: 68def9d6e9f484249b8222360ee586ec
+  - enabled: 0
+    path: Assets/Scenes/Bubbles enigma.unity
+    guid: 7540d3acea5e6cd45a9ed82835bde649
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

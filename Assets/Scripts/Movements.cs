@@ -26,32 +26,21 @@ public class Movements : MonoBehaviour
         SceneManager.LoadSceneAsync("Village");
     }
 
-    /*public void ToWhaleForBubbles()
-    {
-        //Si le joueur a réussi le premier puzzle, il peut aller à la suite
-        if(GameManager.Instance.puzzle1Succeed)
-        {
-            SceneManager.LoadSceneAsync("Whale for bubbles");
-        }
-        //Si le joueur n'a pas réussi le premier puzzle, il ne peut pas aller à la suite
-        else
-        {
-            Debug.Log("Vous ne pouvez pas aller là pour le moment");
-        }
-    }*/
-
    public void ToVillageRightSide()
     {
+        //Si le joueur a réussi le deuxième puzzle, il peut y aller
         if (GameManager.Instance.puzzle2Succeed)
         {
             SceneManager.LoadSceneAsync("Village right side");
         }
         else
         {
+            //Si le joueur n'a réussi que le premier puzzle, il va à la scène avant le deuxième puzzle
             if (GameManager.Instance.puzzle1Succeed)
             {
-                SceneManager.LoadSceneAsync("Whale for bubbles");
+                SceneManager.LoadSceneAsync("Whale translate");
             }
+            //Si le joueur n'a pas réussi la première énigme, il ne peut pas encore aller par là.
             else
             {
                 Debug.Log("Vous ne pouvez pas aller là pour le moment");
@@ -60,15 +49,15 @@ public class Movements : MonoBehaviour
         }
     }
 
-    public void ToBubblesPuzzle()
+    public void ToTranslationPuzzle()
     {
-        SceneManager.LoadSceneAsync("Bubbles enigma");
+        SceneManager.LoadSceneAsync("Whale translate");
     }
 
-    public void ToArrival()
+    /*public void ToArrival()
     {
         SceneManager.LoadSceneAsync("Arrival");
 
-    }
+    }*/
 
 }

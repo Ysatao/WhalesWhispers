@@ -8,10 +8,6 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public bool puzzle1Succeed = false;
     [HideInInspector] public bool puzzle2Succeed = false;
-    [HideInInspector] public bool arrivalDialogueDone = false;
-    [HideInInspector] public bool pageTaken = false;
-    //Faire une liste pour l'inventaire
-    [HideInInspector] public List<string> collectedPages = new List<string>();
 
     //Il sera actif dès le lancement du jeu
     private void Awake()
@@ -26,21 +22,6 @@ public class GameManager : MonoBehaviour
         else if (Instance != this)
         {
             Destroy(this.gameObject);
-        }
-    }
-
-    //Gérer les pages que le joueur possède déjà
-    public bool HasPage(string pageNumber)
-    {
-        return collectedPages.Contains(pageNumber);
-    }
-
-    //Gérer l'ajout de pages
-    public void AddPage(string pageNumber)
-    {
-        if (!collectedPages.Contains(pageNumber))
-        {
-            collectedPages.Add(pageNumber);
         }
     }
 }
