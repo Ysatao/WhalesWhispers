@@ -312,7 +312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6354781872173902341, guid: 9232a53274c92de4e8d4e784b2d82a51, type: 3}
+  m_Sprite: {fileID: -425995913362149430, guid: 7f04c0b694ddce4438fdb3355534370a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3036,7 +3036,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.15686275, g: 0.1764706, b: 0.3529412, a: 1}
+  m_Color: {r: 0.1764706, g: 0.21176472, b: 0.38823533, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5397,10 +5397,11 @@ MonoBehaviour:
   - {fileID: 1554111898}
   - {fileID: 722751404}
   - {fileID: 1205553258}
-  foreignWordSprite: {fileID: -6354781872173902341, guid: 9232a53274c92de4e8d4e784b2d82a51, type: 3}
+  foreignWordSprite: {fileID: -425995913362149430, guid: 7f04c0b694ddce4438fdb3355534370a, type: 3}
   correctWord: OSEAN
   knownLetters:
   - E
+  - A
   croixPanel: {fileID: 535177687}
 --- !u!1 &1946903540
 GameObject:

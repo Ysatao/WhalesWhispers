@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b5f7649e25f4b84eaa6eebfea47263c
+guid: be66f44f851c60b429b18d48f7a9f3ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5198499436242999864
-    second: Dialogue 1_0
+      213: -5548760904348227511
+    second: Wall enigma words_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dialogue 1_0
+      name: Wall enigma words_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2224
-        height: 1668
+        width: 1500
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83a1556c1b7c42840800000000000000
-      internalID: 5198499436242999864
+      spriteID: 948afb82b57def2b0800000000000000
+      internalID: -5548760904348227511
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dialogue 1_0: 5198499436242999864
+      Wall enigma words_0: -5548760904348227511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

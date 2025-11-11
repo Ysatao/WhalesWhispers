@@ -62,6 +62,7 @@ public class TranslationEnigma : MonoBehaviour
         }
     }
 
+    //Le joueur peut cliquer sur les lettres pour constuire le mot
     public void OnLetterClick(string letter)
     {
         for(int i = 0; i < playerAnswer.Length; i++)
@@ -75,6 +76,7 @@ public class TranslationEnigma : MonoBehaviour
         }
     }
 
+    //Permettre au joueur de retirer la dernière lettre qu'il a mise grâce à un bouton
     public void RemoveLastLetter()
     {
         for(int i = playerAnswer.Length - 1; i >= 0; i--)
@@ -88,6 +90,7 @@ public class TranslationEnigma : MonoBehaviour
         }
     }
 
+    //Bouton qui vérifie si le mot est correct ou non. S'il est correct, on passe à la scène suivante
     public void ValidateWord()
     {
         for (int i = 0; i < playerAnswer.Length; i++)
@@ -114,7 +117,6 @@ public class TranslationEnigma : MonoBehaviour
             }
         }
 
-        Debug.Log("mot correct");
         if(GameManager.Instance != null)
         {
             GameManager.Instance.puzzle2Succeed = true;
@@ -138,6 +140,7 @@ public class TranslationEnigma : MonoBehaviour
         croixPanel.SetActive(false);
     }
 
+    //Reset le mot lorsque le joueur se trompe
     void ResetWord()
     {
         for(int i = 0; i < playerAnswer.Length; i++)

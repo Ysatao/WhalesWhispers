@@ -14,7 +14,7 @@ public class CharactersDialogues : MonoBehaviour
         //Si le joueur choisit to the puzzle, il ira au puzzle. Sinon, le dialogue se ferme
         if (answer == "to the puzzle")
         {
-            SceneManager.LoadSceneAsync("Bubbles enigma");
+            SceneManager.LoadSceneAsync("Translation enigma");
         }
         else
         {
