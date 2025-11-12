@@ -20,6 +20,8 @@ public class TranslationEnigma : MonoBehaviour
     //true si la lettre est déjà donnée
     private bool[] isSlotKnown;
 
+    public GameObject goodAnswerPanel;
+
     private string[] playerAnswer;
 
     public GameObject croixPanel;
@@ -119,6 +121,8 @@ public class TranslationEnigma : MonoBehaviour
 
         if(GameManager.Instance != null)
         {
+            StartCoroutine(StartGoodAnswerPanel(1f));
+
             GameManager.Instance.puzzle2Succeed = true;
         }
 
@@ -168,6 +172,13 @@ public class TranslationEnigma : MonoBehaviour
                 slotsText[i].text = "_";
             }
         }
+    }
+
+    private IEnumerator StartGoodAnswerPanel(float delay)
+    {
+        goodAnswerPanel.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        goodAnswerPanel.SetActive(false);
     }
 
 }

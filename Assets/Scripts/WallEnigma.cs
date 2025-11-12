@@ -9,6 +9,7 @@ public class WallEnigma : MonoBehaviour
     int actualIndex = 0;
 
     public GameObject croixPanel;
+    public GameObject goodAnswerPanel;
     public void ButtonClick(string button)
     {
 
@@ -16,6 +17,7 @@ public class WallEnigma : MonoBehaviour
         if (button == correctAnswer[actualIndex])
         {
             actualIndex++;
+            StartCoroutine(StartGoodAnswerPanel(1f));
 
             Debug.Log("nice");
 
@@ -46,5 +48,12 @@ public class WallEnigma : MonoBehaviour
         yield return new WaitForSeconds(delay);
         croixPanel.SetActive(false);
         }
-    }
+
+         private IEnumerator StartGoodAnswerPanel(float delay)
+        {
+        goodAnswerPanel.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        goodAnswerPanel.SetActive(false);
+        }
+}
 
