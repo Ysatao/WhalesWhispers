@@ -17,7 +17,7 @@ public class WallEnigma : MonoBehaviour
         if (button == correctAnswer[actualIndex])
         {
             actualIndex++;
-            StartCoroutine(StartGoodAnswerPanel(1f));
+            
 
             Debug.Log("nice");
 
@@ -26,6 +26,7 @@ public class WallEnigma : MonoBehaviour
             {
                 //Affichage pour voir si ça fonctionne bien
                 Debug.Log("réussi");
+                StartCoroutine(StartGoodAnswerPanel(1f));
                 GameManager.Instance.puzzle1Succeed = true;
                 SceneManager.LoadSceneAsync("Cave");
             }

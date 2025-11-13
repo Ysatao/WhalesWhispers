@@ -26,6 +26,8 @@ public class TranslationEnigma : MonoBehaviour
 
     public GameObject croixPanel;
 
+    public GameObject wordIncomplete;
+
     void Start()
     {
         foreignWordImage.sprite = foreignWordSprite;
@@ -99,6 +101,7 @@ public class TranslationEnigma : MonoBehaviour
         {
             if (string.IsNullOrEmpty(playerAnswer[i]))
             {
+                StartCoroutine(StartIncompleteWordText(1));
                 Debug.Log("mot incomplet");
                 return;
             }
@@ -181,4 +184,10 @@ public class TranslationEnigma : MonoBehaviour
         goodAnswerPanel.SetActive(false);
     }
 
+    private IEnumerator StartIncompleteWordText(float delay)
+    {
+        wordIncomplete.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        wordIncomplete.SetActive(false);
+    }
 }

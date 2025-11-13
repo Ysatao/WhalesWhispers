@@ -38,7 +38,7 @@ public class Movements : MonoBehaviour
             //Si le joueur n'a réussi que le premier puzzle, il va à la scène avant le deuxième puzzle
             if (GameManager.Instance.puzzle1Succeed)
             {
-                SceneManager.LoadSceneAsync("Whale translate");
+                SceneManager.LoadSceneAsync("Translation enigma");
             }
             //Si le joueur n'a pas réussi la première énigme, il ne peut pas encore aller par là.
             else
