@@ -220,6 +220,7 @@ RectTransform:
   - {fileID: 553772594}
   - {fileID: 1040350222}
   - {fileID: 1392337736}
+  - {fileID: 352130507}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -240,6 +241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestionsEnigma
   answer: blue
+  incorrectAnswer1: red
+  incorrectAnswer2: green
   croixPanel: {fileID: 352130504}
 --- !u!1 &352130504
 GameObject:
@@ -306,15 +309,15 @@ RectTransform:
   m_GameObject: {fileID: 352130504}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 0.59999996}
+  m_LocalScale: {x: 1.025641, y: 1.025641, z: 1.025641}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 237194704}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 240, y: 135.12498}
-  m_SizeDelta: {x: 799.99994, y: 450.4166}
+  m_AnchoredPosition: {x: 10.256409, y: 6.1965637}
+  m_SizeDelta: {x: -0.00012207031, y: 0.8439331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &553772593
 GameObject:
@@ -905,7 +908,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1312653703462647184, guid: 2afe355a6fbeeed4281aeae6a5286703, type: 3}
+  m_Sprite: {fileID: 5763756195153791727, guid: a16a06d72d5b91942b4914a665f12baf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1457,5 +1460,4 @@ SceneRoots:
   - {fileID: 2071197284}
   - {fileID: 2033725202}
   - {fileID: 237194704}
-  - {fileID: 352130507}
   - {fileID: 1956146007}

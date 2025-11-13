@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Questions enigma.unity
     guid: b44db102668a6c74eb04a088f5020c98
+  - enabled: 1
+    path: Assets/Scenes/The ennd.unity
+    guid: 827ca53779961d5428412d19e125e6e5
   - enabled: 0
     path: Assets/Scenes/Bubbles enigma.unity
     guid: 7540d3acea5e6cd45a9ed82835bde649

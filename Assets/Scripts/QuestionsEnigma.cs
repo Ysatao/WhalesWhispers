@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class QuestionsEnigma : MonoBehaviour
 {
@@ -13,9 +14,10 @@ public class QuestionsEnigma : MonoBehaviour
         if(button == answer)
         {
             GameManager.Instance.puzzle3Succeed = true;
+            SceneManager.LoadSceneAsync("The ennd");
             Debug.Log("bonne réponse");
         }
-        else if(button == "red" || button == "green")
+        else
         {
             StartCoroutine(StartCroixRouge(1f));
         }

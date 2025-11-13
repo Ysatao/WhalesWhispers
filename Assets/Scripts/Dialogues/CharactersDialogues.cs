@@ -6,6 +6,7 @@ public class CharactersDialogues : MonoBehaviour
 {
     //Tableau de panels
     [SerializeField] GameObject[] dialoguePanels;
+    [SerializeField] GameObject arrowToVillage;
     int currentIndex = 0;
     string[] playerAnswer = { "to the puzzle", "not now"};
 
@@ -25,6 +26,10 @@ public class CharactersDialogues : MonoBehaviour
     public void StartDialogue()
     {
         currentIndex = 0;
+
+        //Cacher la flèche
+        if (arrowToVillage != null)
+            arrowToVillage.SetActive(false);
 
         //Si le puzzle 2 n'a pas été résolu, le dialogue recommence
         if (GameManager.Instance !=null && GameManager.Instance.puzzle2Succeed)
@@ -79,5 +84,14 @@ public class CharactersDialogues : MonoBehaviour
         {
             dialoguePanels[i].SetActive(false);
         }
+
+
+        GameManager.Instance.arrivalDialogueDone = true;
+
+        ///Afficher la flèche
+        if (arrowToVillage != null)
+            arrowToVillage.SetActive(true);
     }
+
+    
 }

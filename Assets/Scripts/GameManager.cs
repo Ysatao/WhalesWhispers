@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool puzzle1Succeed = false;
     [HideInInspector] public bool puzzle2Succeed = false;
     [HideInInspector] public bool puzzle3Succeed = false;
+    [HideInInspector] public bool arrivalDialogueDone = false;
 
     //Il sera actif dès le lancement du jeu
     private void Awake()

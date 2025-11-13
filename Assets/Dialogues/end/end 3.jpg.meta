@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a59fd80f9dc33594a9036e17ca3b6758
+guid: f1b56cf2f11ba094ea49ef0f4ab9602c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8852306787379129090
-    second: Cave code 1_0
+      213: -639539156810913531
+    second: end 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cave code 1_0
+      name: end 3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1800
-        height: 1668
+        width: 1668
+        height: 1800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20b23802f16b9da70800000000000000
-      internalID: 8852306787379129090
+      spriteID: 509255a7686ef17f0800000000000000
+      internalID: -639539156810913531
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cave code 1_0: 8852306787379129090
+      end 3_0: -639539156810913531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

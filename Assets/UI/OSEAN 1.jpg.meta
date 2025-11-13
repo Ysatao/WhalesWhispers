@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7e8a40726b977fb419de3a45690aa4a5
+guid: 475d37ee249e83742aa64bc2f070984e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1901788088666267634
-    second: right side enigma_0
+      213: 6516428338803699587
+    second: OSEAN 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: right side enigma_0
+      name: OSEAN 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2224
+        width: 1800
         height: 1668
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ff9507c032846a10800000000000000
-      internalID: 1901788088666267634
+      spriteID: 38feea27c010f6a50800000000000000
+      internalID: 6516428338803699587
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      right side enigma_0: 1901788088666267634
+      OSEAN 1_0: 6516428338803699587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

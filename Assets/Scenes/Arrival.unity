@@ -290,7 +290,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7980393281090362762, guid: 3573bc2a4d7799b44ba27606a373fc21, type: 3}
+  m_Sprite: {fileID: 8785528416856301991, guid: b88089ac95172ca4da14098d81b75bdc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -346,7 +346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &175759027
 RectTransform:
   m_ObjectHideFlags: 0
@@ -491,6 +491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   puzzle1Succeed: 0
   puzzle2Succeed: 0
+  puzzle3Succeed: 0
+  arrivalDialogueDone: 0
 --- !u!4 &438851475
 Transform:
   m_ObjectHideFlags: 0
@@ -844,6 +846,7 @@ MonoBehaviour:
   - {fileID: 1637833895}
   - {fileID: 152861317}
   - {fileID: 631821369}
+  arrowToVillage: {fileID: 175759026}
 --- !u!1 &823488639
 GameObject:
   m_ObjectHideFlags: 0
