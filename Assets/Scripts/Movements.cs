@@ -54,6 +54,11 @@ public class Movements : MonoBehaviour
         SceneManager.LoadSceneAsync("Whale translate");
     }
 
+    public void ToQuestions()
+    {
+        SceneManager.LoadSceneAsync("Questions enigma");
+    }
+
     /*public void ToArrival()
     {
         SceneManager.LoadSceneAsync("Arrival");

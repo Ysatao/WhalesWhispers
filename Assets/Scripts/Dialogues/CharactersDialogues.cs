@@ -9,7 +9,7 @@ public class CharactersDialogues : MonoBehaviour
     int currentIndex = 0;
     string[] playerAnswer = { "to the puzzle", "not now"};
 
-    public void YesNo(string answer)
+    /*public void YesNo(string answer)
     {
         //Si le joueur choisit to the puzzle, il ira au puzzle. Sinon, le dialogue se ferme
         if (answer == "to the puzzle")
@@ -20,7 +20,7 @@ public class CharactersDialogues : MonoBehaviour
         {
             EndDialogue();
         }
-    }
+    }*/
 
     public void StartDialogue()
     {

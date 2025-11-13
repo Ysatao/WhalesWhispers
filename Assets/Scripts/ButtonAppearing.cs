@@ -6,6 +6,7 @@ public class ButtonAppearing : MonoBehaviour
 {
     public GameObject rightArrow;
     public GameObject translatePanel;
+    public GameObject leftArrow;
     public void Start()
     {
        
@@ -16,6 +17,10 @@ public class ButtonAppearing : MonoBehaviour
         {
             rightArrow.SetActive(true);
             translatePanel.SetActive(true);
+        }
+        if(GameManager.Instance.puzzle2Succeed == true)
+        {
+            leftArrow.SetActive(true);
         }
     }
 }

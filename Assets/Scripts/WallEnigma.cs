@@ -18,7 +18,6 @@ public class WallEnigma : MonoBehaviour
         {
             actualIndex++;
             
-
             Debug.Log("nice");
 
             //Si le joueur fait le bon ordre au complet, il a réussi
